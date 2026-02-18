@@ -10,7 +10,7 @@ function Header() {
       </Box>
 
       <HStack gap="4" pt="4">
-        <Text color="gray.500">
+        <Text>
           Partnered with <strong>Blizzard Entertainment</strong>
         </Text>
       </HStack>
