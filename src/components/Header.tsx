@@ -1,30 +1,19 @@
-import { Heading, Text, Box, HStack, Stack } from "@chakra-ui/react"
+import { VStack, Heading, Text } from "@chakra-ui/react"
+import GlitchText from "./GlitchText"
 
-function Header() {
+export default function Header() {
   return (
-    <Stack gap="6">
-      <Box>
-        <Heading size="4xl" fontWeight="800" letterSpacing="tight" mb="2">
-          ZeroDayton
-        </Heading>
-      </Box>
+    <VStack align="start" gap="4">
+      <Heading size="2xl">
+        <GlitchText text="ZeroDayton" />
+      </Heading>
 
-      <HStack gap="4" pt="4">
-        <Text>
-          Partnered with <strong>Blizzard Entertainment</strong>
-        </Text>
-      </HStack>
-
-      <Box bg="gray.100" p="4" borderRadius="md" borderLeft="4px solid" borderColor="gray.300">
-        <Text fontSize="xs" fontWeight="black" color="gray.400" textTransform="uppercase" mb="1">
-          Capstone Group
-        </Text>
-        <Text fontSize="md" color="gray.700">
-          Wyatt Bier • Matthew Dowell • Dan Frederick • Ryan Zmuda
-        </Text>
-      </Box>
-    </Stack>
+      <Text fontSize="lg" color="gray.600">
+        A Unity security plugin designed to make reverse engineering and
+        cheating significantly more difficult through compile-time
+        transformations and runtime integrity verification.
+      </Text>
+    </VStack>
   )
 }
 
-export default Header

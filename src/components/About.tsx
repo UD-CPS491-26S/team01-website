@@ -1,30 +1,38 @@
-import { Text, Heading, Stack, Box } from "@chakra-ui/react"
+import { VStack, Box, Text } from "@chakra-ui/react"
+import SectionHeader from "./SectionHeader"
 
-function About() {
+export default function About() {
+  const pillars = [
+    {
+      title: "The Problem",
+      body: "Unity games are frequently reverse engineered and modified by cheat developers."
+    },
+    {
+      title: "ZeroDayton",
+      body: "ZeroDayton introduces protections during compilation and runtime."
+    },
+    {
+      title: "Security Techniques",
+      body: "Compile-time transformations, symbol mangling, randomized memory layouts, and runtime integrity verification."
+    },
+    {
+      title: "Technology Stack",
+      body: "Unity, .NET, dnSpyEx, ILSpy, Ghidra, and IDA."
+    }
+  ]
+
   return (
-    <Stack gap="6">
-      <Heading size="lg" fontWeight="700">
-        Project Overview
-      </Heading>
-      
-      <Box className="abstract-content">
-        <Text 
-          mb="6"
-        >
-          Modern Unity games are highly accessible to public decompilers and memory-editing tools, 
-          lowering the barrier to cheat development. ZeroDayton is a research initiative 
-          designing shippable protection methods to increase the cost of reverse engineering.
-        </Text>
+    <VStack align="stretch" gap="10">
+      <SectionHeader label="PROJECT OVERVIEW" title="About the Project" />
 
-        <Text>
-          We are building a Unity plugin that applies compile-time IL transformations 
-          along with runtime integrity protections. Our objective isn't just to stop cheats, 
-          but to significantly increase the attacker’s cost in time and effort while maintaining game 
-          stability and developer usability.
-        </Text>
-      </Box>
-    </Stack>
+      <VStack align="stretch" gap="6">
+        {pillars.map((p) => (
+          <Box key={p.title}>
+            <Text fontWeight="bold">{p.title}</Text>
+            <Text color="gray.600">{p.body}</Text>
+          </Box>
+        ))}
+      </VStack>
+    </VStack>
   )
 }
-
-export default About

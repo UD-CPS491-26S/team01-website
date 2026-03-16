@@ -1,17 +1,25 @@
-import { Container, VStack, Separator } from "@chakra-ui/react"
-import Header from "./components/Header"
-import About from "./components/About"
+import HeroSection from "./components/HeroSection";
+import OverviewSection from "./components/OverviewSection";
+import TeamSection from "./components/TeamSection";
+import ShowcaseSection from "./components/ShowcaseSection";
+import Footer from "./components/Footer";
+// import Header from "./components/Header";   // uncomment if needed
 
 function App() {
   return (
-    <Container maxW="3xl" pt="20" pb="20">
-      <VStack gap="16" align="stretch">
-        <Header />
-        <Separator borderColor="gray.200" />
-        <About />
-      </VStack>
-    </Container>
-  )
+    <div className="min-h-screen flex flex-col">
+      {/* <Header /> */}  {/* ← usually fixed/sticky */}
+      
+      <main className="flex-grow">
+        <HeroSection />
+        <OverviewSection />
+        <TeamSection />
+        <ShowcaseSection />
+      </main>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
