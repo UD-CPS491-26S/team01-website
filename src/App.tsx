@@ -1,24 +1,15 @@
-import HeroSection from "./components/HeroSection";
-import OverviewSection from "./components/OverviewSection";
-import TeamSection from "./components/TeamSection";
-import ShowcaseSection from "./components/ShowcaseSection";
-import Footer from "./components/Footer";
+import { HeroSection, OverviewSection, TeamSection, ShowcaseSection, Footer } from "./components"
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* <Header /> */}  {/* ← usually fixed/sticky */}
-      
-      <main className="flex-grow">
-        <HeroSection />
-        <OverviewSection />
-        <TeamSection />
-        <ShowcaseSection />
-      </main>
-
+    <div style={{ margin: 0, padding: 0 }}>
+      <HeroSection />
+      <OverviewSection />
+      <TeamSection />
+      <ShowcaseSection />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -29,7 +29,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     id: 3,
-    name: "Dan Frederick",
+    name: "Daniel Frederick",
     role: "Runtime Security Systems",
     bio: "Developed runtime integrity verification and hashing systems used to detect unauthorized code modification.",
     initials: "DF"
