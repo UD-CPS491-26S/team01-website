@@ -3,7 +3,6 @@ import OverviewSection from "./components/OverviewSection";
 import TeamSection from "./components/TeamSection";
 import ShowcaseSection from "./components/ShowcaseSection";
 import Footer from "./components/Footer";
-// import Header from "./components/Header";   // uncomment if needed
 
 function App() {
   return (

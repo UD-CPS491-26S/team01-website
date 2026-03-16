@@ -1,5 +1,5 @@
 import SectionHeader from "./SectionHeader"
-import { TEAM_MEMBERS } from "../data/projectData.ts"
+import { TEAM_MEMBERS } from "../data/projectData"
 
 export default function TeamSection() {
   return (
@@ -8,21 +8,42 @@ export default function TeamSection() {
         <SectionHeader
           label="TEAM"
           title="Who Built ZeroDayton"
-          sub="Four senior computer science students at the University of Dayton."
+          sub="Four senior computer science students at the University of Dayton working on the ZeroDayton Unity security plugin."
         />
-
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
-            gap: "1rem"
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: "1rem",
           }}
         >
           {TEAM_MEMBERS.map((member) => (
-            <div key={member.id} style={{ border: "1px solid rgba(0,255,200,0.15)", padding: "2rem" }}>
-              <h3 style={{ color: "#e8fff4" }}>{member.name}</h3>
-              <div style={{ color: "#00ffc8" }}>{member.role}</div>
-              <p style={{ color: "rgba(200,240,225,0.6)" }}>{member.bio}</p>
+            <div
+              key={member.id}
+              style={{
+                border: "1px solid rgba(0,255,200,0.15)",
+                padding: "2rem",
+              }}
+            >
+              <h3
+                style={{
+                  fontFamily: "'Share Tech Mono', monospace",
+                  color: "#e8fff4",
+                }}
+              >
+                {member.name}
+              </h3>
+              <div style={{ color: "#00ffc8", marginBottom: "1rem" }}>
+                {member.role}
+              </div>
+              <p
+                style={{
+                  fontFamily: "'Lora', Georgia, serif",
+                  color: "rgba(200,240,225,0.6)",
+                }}
+              >
+                {member.bio}
+              </p>
             </div>
           ))}
         </div>
