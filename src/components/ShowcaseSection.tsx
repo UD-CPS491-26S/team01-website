@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader"
 import { SHOWCASE_ITEMS } from "../data/projectData"
+import demoVideo from "../assets/zddemo1.mp4"
 
 export default function ShowcaseSection() {
   return (
@@ -38,6 +39,18 @@ export default function ShowcaseSection() {
               >
                 {item.desc}
               </p>
+
+              {item.label === "Demo Video" && (
+                <video
+                  src={demoVideo}
+                  controls
+                  style={{
+                    width: "100%",
+                    marginTop: "1rem",
+                    border: "1px solid rgba(0,255,200,0.3)",
+                  }}
+                />
+              )}
             </div>
           ))}
         </div>
