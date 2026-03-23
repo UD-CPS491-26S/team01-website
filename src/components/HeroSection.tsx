@@ -65,26 +65,37 @@ export default function HeroSection() {
         >
           University of Dayton · Computer Science · Capstone
         </div>
-        <h1
+        <div
           style={{
-            fontFamily: "'Share Tech Mono', monospace",
-            fontSize: "clamp(3.5rem, 9vw, 7.5rem)",
-            color: "#e8fff4",
-            margin: 0,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "1rem",
+            flexWrap: "wrap",
           }}
         >
-          ZERO
-        </h1>
-        <h1
-          style={{
-            fontFamily: "'Share Tech Mono', monospace",
-            fontSize: "clamp(3.5rem, 9vw, 7.5rem)",
-            color: "#00ffc8",
-            marginBottom: "2rem",
-          }}
-        >
-          DAYTON
-        </h1>
+          <h1
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontSize: "clamp(3.5rem, 9vw, 7.5rem)",
+              color: "#e8fff4",
+              margin: 0,
+            }}
+          >
+            ZERO
+          </h1>
+
+          <h1
+            style={{
+              fontFamily: "'Share Tech Mono', monospace",
+              fontSize: "clamp(3.5rem, 9vw, 7.5rem)",
+              color: "#00ffc8",
+              marginBottom: "2rem",
+            }}
+          >
+            DAYTON
+          </h1>
+        </div>
         <p
           style={{
             fontFamily: "'Lora', Georgia, serif",

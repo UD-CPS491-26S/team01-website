@@ -9,7 +9,6 @@ export interface TeamMember {
 export interface ShowcaseItem {
   label: string
   icon: string
-  desc: string
 }
 
 export const TEAM_MEMBERS: TeamMember[] = [
