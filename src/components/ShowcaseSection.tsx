@@ -5,13 +5,14 @@ import demoVideo from "../assets/zddemo1.mp4"
 export default function ShowcaseSection() {
   return (
     <section style={{ background: "#080c14", padding: "8rem 0" }}>
-      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 2.5rem" }}>
+      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 2.5rem" }}>
         <SectionHeader label="SHOWCASE" title="Project Media" />
+
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "1.5rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "2rem",
           }}
         >
           {SHOWCASE_ITEMS.map((item) => (
@@ -22,23 +23,19 @@ export default function ShowcaseSection() {
                 padding: "2rem",
               }}
             >
-              <div style={{ fontSize: "2rem" }}>{item.icon}</div>
-              <h4
-                style={{
-                  fontFamily: "'Share Tech Mono', monospace",
-                  color: "#e8fff4",
-                }}
-              >
-                {item.label}
-              </h4>
-              <p
-                style={{
-                  fontFamily: "'Lora', Georgia, serif",
-                  color: "rgba(200,240,225,0.6)",
-                }}
-              >
-                {item.desc}
-              </p>
+              <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                <div style={{ fontSize: "2rem" }}>{item.icon}</div>
+
+                <h4
+                  style={{
+                    fontFamily: "'Share Tech Mono', monospace",
+                    color: "#e8fff4",
+                    margin: 0,
+                  }}
+                >
+                  {item.label}
+                </h4>
+              </div>
 
               {item.label === "Demo Video" && (
                 <video
@@ -46,7 +43,7 @@ export default function ShowcaseSection() {
                   controls
                   style={{
                     width: "100%",
-                    marginTop: "1rem",
+                    marginTop: "1.5rem",
                     border: "1px solid rgba(0,255,200,0.3)",
                   }}
                 />

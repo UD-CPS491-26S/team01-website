@@ -44,8 +44,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
 ]
 
 export const SHOWCASE_ITEMS: ShowcaseItem[] = [
-  { label: "Demo Video", icon: "▶", desc: "Project walkthrough and live demo footage" },
-  { label: "Technical Overview", icon: "⊞", desc: "Summary of the security systems implemented in the plugin" },
-  { label: "Presentation Slides", icon: "◈", desc: "Slides from the final capstone presentation" },
-  { label: "Source Code", icon: "⌥", desc: "GitHub repository containing the implementation" }
+  { label: "Demo Video", icon: "▶" },
+  { label: "Technical Overview", icon: "⊞" },
+  { label: "Presentation Slides", icon: "◈" },
+  { label: "Source Code", icon: "⌥" } // TODO: Change to Github logo and add links
 ]
