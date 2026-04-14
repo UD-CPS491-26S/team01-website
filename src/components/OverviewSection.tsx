@@ -14,7 +14,7 @@ const pillars = [
   {
     num: "03",
     title: "Security Techniques",
-    body: "The system introduces compile-time transformations, symbol mangling, randomized memory layouts, and runtime integrity verification designed to disrupt common cheating techniques.",
+    body: "The system introduces automated struct entropy, control flow obfuscation, argument protection & encryption, and runtime integrity verification designed to disrupt cheating techniques.",
   },
   {
     num: "04",
