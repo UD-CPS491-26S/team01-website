@@ -10,7 +10,7 @@ export default function SectionHeader({ label, title, sub }: Props) {
       <div
         style={{
           fontFamily: "'Share Tech Mono', monospace",
-          fontSize: "11px",
+          fontSize: "14px",
           letterSpacing: "0.35em",
           color: "#00ffc8",
           marginBottom: "0.75rem"

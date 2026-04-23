@@ -56,7 +56,7 @@ export default function HeroSection() {
         <div
           style={{
             fontFamily: "'Share Tech Mono', monospace",
-            fontSize: "11px",
+            fontSize: "14px",
             letterSpacing: "0.35em",
             color: "#00ffc8",
             marginBottom: "1.5rem",
@@ -108,8 +108,8 @@ export default function HeroSection() {
           }}
         >
           ZeroDayton is a Unity security plugin designed to make reverse engineering
-          and cheating significantly more difficult through compile-time transformations,
-          obfuscation, and runtime integrity verification.
+          and cheating significantly more difficult through struct entropy, obfuscation,
+          metamorphism, and runtime integrity verification.
         </p>
       </div>
     </section>

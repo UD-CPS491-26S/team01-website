@@ -8,7 +8,7 @@ export default function TeamSection() {
         <SectionHeader
           label="TEAM"
           title="Who Built ZeroDayton"
-          sub="Four senior computer science students at the University of Dayton working on the ZeroDayton Unity security plugin."
+          sub="Four senior computer science students at the University of Dayton."
         />
         <div
           style={{
@@ -23,8 +23,22 @@ export default function TeamSection() {
               style={{
                 border: "1px solid rgba(0,255,200,0.15)",
                 padding: "2rem",
+                textAlign: "center",
               }}
             >
+              <img
+                src={member.image}
+                alt={member.name}
+                style={{
+                  width: "100px",
+                  height: "100px",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  marginBottom: "1rem",
+                  border: "2px solid rgba(0,255,200,0.3)",
+                }}
+              />
+
               <h3
                 style={{
                   fontFamily: "'Share Tech Mono', monospace",
@@ -33,9 +47,11 @@ export default function TeamSection() {
               >
                 {member.name}
               </h3>
+
               <div style={{ color: "#00ffc8", marginBottom: "1rem" }}>
                 {member.role}
               </div>
+
               <p
                 style={{
                   fontFamily: "'Lora', Georgia, serif",
